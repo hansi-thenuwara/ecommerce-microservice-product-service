@@ -15,7 +15,6 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Cacheable("products")
     public List<Product> getProducts(){
         return productRepository.findAll();
     }
